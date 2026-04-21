@@ -1,0 +1,148 @@
+%%%%%%%%%%%%%%%%%
+% CV của Nguyễn Hữu Minh Quân
+%%%%%%%%%%%%%%%%%
+
+\documentclass[10pt,a4paper,withhyper]{altacv}
+\usepackage[utf8]{inputenc}
+\usepackage[T5]{fontenc}
+\usepackage[vietnamese]{babel}
+
+% Cấu hình Layout
+\geometry{left=1.25cm,right=1.25cm,top=1.5cm,bottom=1.5cm,columnsep=1.2cm}
+
+\usepackage{paracol}
+
+\iftutex
+  \setmainfont{Roboto Slab}
+  \setsansfont{Lato}
+  \renewcommand{\familydefault}{\sfdefault}
+\else
+  \usepackage[rm]{roboto}
+  \usepackage[defaultsans]{lato}
+  \renewcommand{\familydefault}{\sfdefault}
+\fi
+
+% Định nghĩa màu sắc
+\definecolor{SlateGrey}{HTML}{2E2E2E}
+\definecolor{LightGrey}{HTML}{666666}
+\definecolor{DarkBlue}{HTML}{003366}
+\definecolor{MikuTeal}{HTML}{39CCCC}
+\definecolor{GoldenEarth}{HTML}{E7D192}
+
+\colorlet{name}{black}
+\colorlet{tagline}{MikuTeal}
+\colorlet{heading}{DarkBlue}
+\colorlet{headingrule}{MikuTeal}
+\colorlet{subheading}{DarkBlue}
+\colorlet{accent}{MikuTeal}
+\colorlet{emphasis}{SlateGrey}
+\colorlet{body}{LightGrey}
+
+\renewcommand{\namefont}{\Huge\rmfamily\bfseries}
+\renewcommand{\personalinfofont}{\footnotesize}
+\renewcommand{\cvsectionfont}{\LARGE\rmfamily\bfseries}
+\renewcommand{\cvsubsectionfont}{\large\bfseries}
+\renewcommand{\cvItemMarker}{{\small\textbullet}}
+
+\begin{document}
+\name{Nguyễn Hữu Minh Quân}
+% SỬA LỖI TẠI ĐÂY: Thêm dấu \ trước ký tự &
+\tagline{Fullstack \& Game Developer} 
+
+\photoR{2.8cm}{avatar.jpg} 
+
+\personalinfo{%
+  \email{minquan2705@gmail.com}
+  \phone{0966.846.502}
+  \location{Thủ Đức, TP. Hồ Chí Minh}
+  \github{MinQuan-kun}
+  \linkedin{nguyễn-hữu-minh-quân-92206139b}
+}
+
+\makecvheader
+
+\columnratio{0.6}
+
+\begin{paracol}{2}
+
+\cvsection{Giới thiệu}
+Sinh viên năm 3 chuyên ngành Công nghệ thông tin tại Trường Đại học Sư phạm TP.HCM. Đam mê mãnh liệt với lập trình Fullstack và phát triển Game. Có khả năng tự học tốt, tư duy logic nhạy bén và tỉ mỉ trong việc tối ưu hóa UI/UX.
+
+\cvsection{Kinh nghiệm làm việc}
+\cvevent{Thực tập}{Bao công nghệ}{07/2025 -- Hiện tại}{TP. Hồ Chí Minh}
+\cvsection{Dự án tiêu biểu}
+
+\cvevent{CyberOps Manager}{Hệ thống quản lý Cyber Game}{}{}
+\begin{itemize}
+\item Quản lý tiệm net toàn diện: tích hợp AI Gemini hỗ trợ khách hàng, sơ đồ máy tính thời gian thực.
+\item Công nghệ: Next.js, Node.js, PostgreSQL, Socket.io.
+\end{itemize}
+
+\divider
+
+\cvevent{Mirai Store}{E-commerce Game Platform}{}{}
+\begin{itemize}
+\item Hệ thống bán game tích hợp AI Chatbot gợi ý game và thanh toán MoMo/PayPal.
+\item Công nghệ: Laravel 11, MongoDB, TailwindCSS, Docker.
+\end{itemize}
+
+\divider
+
+\cvevent{Cinema Galyxa}{Movie Booking System}{}{}
+\begin{itemize}
+\item Hệ thống đặt vé xem phim trực tuyến hiện đại với trải nghiệm mượt mà.
+\item Công nghệ: Next.js 14, Node.js, MongoDB, Tailwind CSS.
+\end{itemize}
+
+\cvsection{Nghiên cứu khoa học}
+
+\cvevent{Tác giả bài báo khoa học}{Tạp chí Khoa học \& Công nghệ ĐH Thái Nguyên}{27/06/2025}{}
+\begin{itemize}
+\item Đề tài: "Một mô hình mô tả hình ảnh kết hợp đồ thị tri thức và mạng học sâu".
+\item DOI: 10.34238/tnu-jst.12614.
+\item Giải ba Nghiên cứu khoa học sinh viên cấp Trường 2023-2024.
+\end{itemize}
+
+\switchcolumn
+
+\cvsection{Kỹ năng \& Chuyên môn} % SỬA LỖI: Thêm \ trước &
+
+\cvsubsection{Lập trình}
+\cvtag{C++} \cvtag{C\#} \cvtag{Python} \cvtag{TypeScript} \cvtag{PHP} \cvtag{Dart}
+
+\divider\smallskip
+
+\cvsubsection{Frontend \& Backend} % SỬA LỖI: Thêm \ trước &
+\cvtag{React} \cvtag{Next.js} \cvtag{NestJS} \cvtag{Laravel} \cvtag{Node.js} \cvtag{FastAPI}
+
+\divider\smallskip
+
+\cvsubsection{Cơ sở dữ liệu}
+\cvtag{PostgreSQL} \cvtag{MySQL} \cvtag{MongoDB} \cvtag{Redis}
+
+\divider\smallskip
+
+\cvsubsection{Game \& DevOps} % SỬA LỖI: Thêm \ trước &
+\cvtag{Unity} \cvtag{Unreal Engine} \cvtag{Docker} \cvtag{Git}
+
+\cvsection{Học vấn}
+
+\cvevent{Cử nhân Công nghệ thông tin}{ĐH Sư phạm TP.HCM}{2023 -- 2027}{}
+\begin{itemize}
+\item GPA hiện tại: \textbf{3.4 / 4.0}
+\end{itemize}
+
+\cvsection{Chứng chỉ}
+
+\cvachievement{\faCertificate}{Google UX Design}{Coursera}
+\divider
+\cvachievement{\faCertificate}{Unity Essentials}{Unity Learn}
+\divider
+\cvachievement{\faCertificate}{AI Boost Bites}{Google Skills}
+
+\cvsection{Ngôn ngữ}
+\cvskill{Tiếng Việt}{5}
+\cvskill{Tiếng Anh}{3}
+
+\end{paracol}
+\end{document}
